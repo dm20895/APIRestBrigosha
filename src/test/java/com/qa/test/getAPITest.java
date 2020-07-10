@@ -244,5 +244,42 @@ public class getAPITest extends TestBase{
 	
 	System.out.println("Headers Array : "+ allHeaders);
 	}
+	
+	@Test(priority = 6)
+	public void GetAttendanceAPI() throws ClientProtocolException, IOException, JSONException {
+		restClient = new RestClient();
+		testBase=new TestBase();
+		HashMap<String, String> headerMap2 = new HashMap<String, String>();
+		headerMap2.put("auth-id", prop.getProperty("authid6"));
+		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
+		headerMap2.putAll(header());
+		URL = prop.getProperty("AttendanceURL");
+		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		
+	//Status Code
+	int staCode = httpResp.getStatusLine().getStatusCode();		
+	System.out.println("Status code is : "+staCode );
+	Assert.assertEquals(staCode, RESPONSE_STATUS_CODE_200	,"Status code is not 200");
+	
+	//Json String
+	String respString = EntityUtils.toString(httpResp.getEntity(),"UTF-8");	
+	JSONObject respJson = new JSONObject(respString);
+	System.out.println("JSON Response From API : "+ respJson);
+	
+	String PageRedirectValue = TestUtil.getValueByJPath(respJson, "/events/page.redirect");
+	System.out.println("Value of type : "+PageRedirectValue);
+	
+		Assert.assertEquals(PageRedirectValue, "/portal");
+	
+
+	//All Headers
+	Header[] allArray = httpResp.getAllHeaders();
+	HashMap<String, String> allHeaders = new HashMap<String, String>();
+	for (Header header : allArray) {
+		allHeaders.put(header.getName(), header.getValue());
+	}
+	
+	System.out.println("Headers Array : "+ allHeaders);
+	}
 
 }
