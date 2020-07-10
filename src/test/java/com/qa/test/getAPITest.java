@@ -33,7 +33,6 @@ public class getAPITest extends TestBase{
 		headerMap.put("api-section",  prop.getProperty("APISection"));
 		headerMap.put("api-version", prop.getProperty("APIVersion"));
 		headerMap.put("auth-token",prop.getProperty("AuthToken") );
-		//headerMap.put("auth-id", prop.getProperty("authid"));
 		return headerMap;
 	}
 	//API Test for Login
