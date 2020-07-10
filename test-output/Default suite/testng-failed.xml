@@ -6,9 +6,6 @@
       <class name="com.qa.test.getAPITest">
         <methods>
           <include name="GetLoginAPI"/>
-          <include name="GetViewCalenderAPI"/>
-          <include name="GetGeoFencesAPI"/>
-          <include name="GetOptHolidayAPI"/>
         </methods>
       </class> <!-- com.qa.test.getAPITest -->
     </classes>
