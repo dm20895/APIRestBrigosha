@@ -54,7 +54,7 @@ public class getAPITest extends TestBase{
 	String idValue = TestUtil.getValueByJPath(respJson, "/user/id");
 	String uidValue = TestUtil.getValueByJPath(respJson, "/user/uid");
 	String locationValue = TestUtil.getValueByJPath(respJson, "/user/location");
-	System.out.println("Value of type -: "+idValue);
+	System.out.println("Value of type : "+idValue);
 	System.out.println("Value of date : "+uidValue);
 	System.out.println("Value of date : "+locationValue);
 	Assert.assertEquals(Integer.parseInt(idValue), 319);
