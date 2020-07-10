@@ -1,93 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-10T13:09:52Z" name="Default suite" finished-at="2020-07-10T13:09:53Z" duration-ms="1826">
+  <suite started-at="2020-07-10T13:24:11Z" name="Default suite" finished-at="2020-07-10T13:24:13Z" duration-ms="1930">
     <groups>
     </groups>
-    <test started-at="2020-07-10T13:09:52Z" name="Default test" finished-at="2020-07-10T13:09:53Z" duration-ms="1826">
+    <test started-at="2020-07-10T13:24:11Z" name="Default test" finished-at="2020-07-10T13:24:13Z" duration-ms="1930">
       <class name="com.qa.test.getAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="setup" finished-at="2020-07-10T18:39:52Z" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:11Z" name="setup" finished-at="2020-07-10T18:54:11Z" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetLoginAPI()[pri:1, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="GetLoginAPI" finished-at="2020-07-10T18:39:52Z" duration-ms="730" status="PASS">
+        <test-method signature="GetLoginAPI()[pri:1, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:11Z" name="GetLoginAPI" finished-at="2020-07-10T18:54:12Z" duration-ms="668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetLoginAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="tearDown" finished-at="2020-07-10T18:39:52Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:12Z" name="tearDown" finished-at="2020-07-10T18:54:12Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="setup" finished-at="2020-07-10T18:39:52Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:12Z" name="setup" finished-at="2020-07-10T18:54:12Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetGeoFencesAPI()[pri:2, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="GetGeoFencesAPI" finished-at="2020-07-10T18:39:52Z" duration-ms="148" status="PASS">
+        <test-method signature="GetGeoFencesAPI()[pri:2, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:12Z" name="GetGeoFencesAPI" finished-at="2020-07-10T18:54:12Z" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetGeoFencesAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="tearDown" finished-at="2020-07-10T18:39:52Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:12Z" name="tearDown" finished-at="2020-07-10T18:54:12Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="setup" finished-at="2020-07-10T18:39:52Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:12Z" name="setup" finished-at="2020-07-10T18:54:12Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetViewCalenderAPI()[pri:3, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:52Z" name="GetViewCalenderAPI" finished-at="2020-07-10T18:39:53Z" duration-ms="266" status="PASS">
+        <test-method signature="GetViewCalenderAPI()[pri:3, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:12Z" name="GetViewCalenderAPI" finished-at="2020-07-10T18:54:13Z" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetViewCalenderAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="tearDown" finished-at="2020-07-10T18:39:53Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="tearDown" finished-at="2020-07-10T18:54:13Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="setup" finished-at="2020-07-10T18:39:53Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="setup" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetOptHolidayAPI()[pri:4, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="GetOptHolidayAPI" finished-at="2020-07-10T18:39:53Z" duration-ms="163" status="PASS">
+        <test-method signature="GetOptHolidayAPI()[pri:4, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="GetOptHolidayAPI" finished-at="2020-07-10T18:54:13Z" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetOptHolidayAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="tearDown" finished-at="2020-07-10T18:39:53Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="tearDown" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="setup" finished-at="2020-07-10T18:39:53Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="setup" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetFeedbackMonthlyAPI()[pri:5, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="GetFeedbackMonthlyAPI" finished-at="2020-07-10T18:39:53Z" duration-ms="178" status="PASS">
+        <test-method signature="GetFeedbackMonthlyAPI()[pri:5, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="GetFeedbackMonthlyAPI" finished-at="2020-07-10T18:54:13Z" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetFeedbackMonthlyAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="tearDown" finished-at="2020-07-10T18:39:53Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="tearDown" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="setup" finished-at="2020-07-10T18:39:53Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="setup" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetAttendanceAPI()[pri:6, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="GetAttendanceAPI" finished-at="2020-07-10T18:39:53Z" duration-ms="138" status="PASS">
+        <test-method signature="GetAttendanceAPI()[pri:6, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="GetAttendanceAPI" finished-at="2020-07-10T18:54:13Z" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAttendanceAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="tearDown" finished-at="2020-07-10T18:39:53Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="tearDown" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="setup" finished-at="2020-07-10T18:39:53Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="setup" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetManualPunchAPI()[pri:7, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="GetManualPunchAPI" finished-at="2020-07-10T18:39:53Z" duration-ms="157" status="PASS">
+        <test-method signature="GetManualPunchAPI()[pri:7, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="GetManualPunchAPI" finished-at="2020-07-10T18:54:13Z" duration-ms="133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetManualPunchAPI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T18:39:53Z" name="tearDown" finished-at="2020-07-10T18:39:53Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="tearDown" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="setup" finished-at="2020-07-10T18:54:13Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="GetPresentAPI()[pri:8, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="GetPresentAPI" finished-at="2020-07-10T18:54:13Z" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPresentAPI -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.test.getAPITest@3c153a1]" started-at="2020-07-10T18:54:13Z" name="tearDown" finished-at="2020-07-10T18:54:13Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
