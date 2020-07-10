@@ -184,6 +184,22 @@ public class getAPITest extends TestBase{
 	
 		Assert.assertEquals(PageRedirectValue, "/portal");
 	}	
+	@Test(priority = 7)
+	public void GetManualPunchAPI() throws ClientProtocolException, IOException, JSONException {
+		HashMap<String, String> headerMap2 = new HashMap<String, String>();
+		headerMap2.put("auth-id", prop.getProperty("authid7"));
+		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
+		headerMap2.putAll(header());
+		URL = prop.getProperty("ManualPunch");
+		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		
+		//Status Code
+		TestUtil.statusCode(httpResp);	
+		
+		//Json String
+		TestUtil.JsonString(httpResp);
+	}	
+	
 	
 	@AfterMethod
 	public void tearDown() {
