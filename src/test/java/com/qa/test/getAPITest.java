@@ -19,9 +19,7 @@ import com.qa.client.RestClient;
 import com.qa.util.TestUtil;
 
 import io.restassured.response.Response;
-/*
- * Deepak
- */
+
 public class getAPITest extends TestBase{
 	
 	TestBase testBase;
