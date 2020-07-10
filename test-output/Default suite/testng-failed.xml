@@ -6,6 +6,7 @@
       <class name="com.qa.test.getAPITest">
         <methods>
           <include name="GetLoginAPI"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.qa.test.getAPITest -->
     </classes>

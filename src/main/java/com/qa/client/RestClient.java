@@ -13,8 +13,8 @@ import org.json.JSONException;
 
 
 public class RestClient {
-	//Get method for login	
-	public CloseableHttpResponse testLogin(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
+	//Get Result	
+	public CloseableHttpResponse getResult(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		HttpGet httpget = new HttpGet(url);  
 		for(Map.Entry<String, String> entry : headerMap.entrySet()) {
@@ -22,76 +22,5 @@ public class RestClient {
 		}
 		CloseableHttpResponse httpResp = httpClient.execute(httpget);
 		return httpResp;
-}
-	//Get method for Geo Fences
-	public CloseableHttpResponse testGeoFences(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
-		CloseableHttpClient httpClient = HttpClients.createDefault();
-		HttpGet httpget = new HttpGet(url);  
-		for(Map.Entry<String, String> entry : headerMap.entrySet()) {
-			httpget.addHeader(entry.getKey(),entry.getValue() );
-		}
-		CloseableHttpResponse httpResp = httpClient.execute(httpget);
-		return httpResp;
-}
-	//Get method for View Calender Fences
-		public CloseableHttpResponse testViewCalender(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
-			CloseableHttpClient httpClient = HttpClients.createDefault();
-			HttpGet httpget = new HttpGet(url);  
-			for(Map.Entry<String, String> entry : headerMap.entrySet()) {
-				httpget.addHeader(entry.getKey(),entry.getValue() );
-			}
-			CloseableHttpResponse httpResp = httpClient.execute(httpget);
-			return httpResp;
-		}
-	
-	//Get method for Optional Holiday
-		public CloseableHttpResponse testOptHolidays(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
-			CloseableHttpClient httpClient = HttpClients.createDefault();
-			HttpGet httpget = new HttpGet(url);  
-			for(Map.Entry<String, String> entry : headerMap.entrySet()) {
-				httpget.addHeader(entry.getKey(),entry.getValue() );
-			}
-			CloseableHttpResponse httpResp = httpClient.execute(httpget);
-			return httpResp;
-	}
-		//get method for monthly feedback
-		public CloseableHttpResponse testMonthlyFeedback(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
-			CloseableHttpClient httpClient = HttpClients.createDefault();
-			HttpGet httpget = new HttpGet(url);  
-			for(Map.Entry<String, String> entry : headerMap.entrySet()) {
-				httpget.addHeader(entry.getKey(),entry.getValue() );
-			}
-			CloseableHttpResponse httpResp = httpClient.execute(httpget);
-			return httpResp;
-	}
-		//get method for Attendance
-		public CloseableHttpResponse testAttendance(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
-			CloseableHttpClient httpClient = HttpClients.createDefault();
-			HttpGet httpget = new HttpGet(url);  
-			for(Map.Entry<String, String> entry : headerMap.entrySet()) {
-				httpget.addHeader(entry.getKey(),entry.getValue() );
-			}
-			CloseableHttpResponse httpResp = httpClient.execute(httpget);
-			return httpResp;
-	}
-		//get method for Manual Punch
-		public CloseableHttpResponse testManualPunch(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
-			CloseableHttpClient httpClient = HttpClients.createDefault();
-			HttpGet httpget = new HttpGet(url);  
-			for(Map.Entry<String, String> entry : headerMap.entrySet()) {
-				httpget.addHeader(entry.getKey(),entry.getValue() );
-			}
-			CloseableHttpResponse httpResp = httpClient.execute(httpget);
-			return httpResp;
-		}
-		//get method for Present
-		public CloseableHttpResponse Present(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
-			CloseableHttpClient httpClient = HttpClients.createDefault();
-			HttpGet httpget = new HttpGet(url);  
-			for(Map.Entry<String, String> entry : headerMap.entrySet()) {
-				httpget.addHeader(entry.getKey(),entry.getValue() );
-			}
-			CloseableHttpResponse httpResp = httpClient.execute(httpget);
-			return httpResp;
-		}
-}
+ }
+}	

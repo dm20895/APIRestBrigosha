@@ -8,7 +8,6 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -43,13 +42,10 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid1"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("LoginURL");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-	//Status Code
-	TestUtil.statusCode(httpResp);
-	
-	//Json String
-	JSONObject respJson = TestUtil.JsonString(httpResp);
+	//Status code Json String & Headers
+	JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
 	
 	String idValue = TestUtil.getValueByJPath(respJson, "/user/id");
 	String uidValue = TestUtil.getValueByJPath(respJson, "/user/uid");
@@ -69,13 +65,10 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid2"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("GeoFencesURL");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-		//Status Code
-		TestUtil.statusCode(httpResp);
-	
-		//Json String
-		JSONObject respJson = TestUtil.JsonString(httpResp);
+		//Status code Json String & Headers
+		JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
 	
 	String nameValue = TestUtil.getValueByJPath(respJson, "/latlng[0]/name");
 	String latValue = TestUtil.getValueByJPath(respJson, "/latlng[0]/lat");
@@ -95,12 +88,10 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid3"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("ViewCalender");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-		//Status Code
-		TestUtil.statusCode(httpResp);	
-		//Json String
-		JSONObject respJson = TestUtil.JsonString(httpResp);
+		//Status code Json String & Headers
+		JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
 	
 	String idValue = TestUtil.getValueByJPath(respJson, "/logDetails/id");
 	String uidValue = TestUtil.getValueByJPath(respJson, "/logDetails/user_id");
@@ -121,12 +112,10 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid4"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("OptHolidayURL");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-		//Status Code
-		TestUtil.statusCode(httpResp);	
-		//Json String
-		JSONObject respJson = TestUtil.JsonString(httpResp);
+	//Status code Json String & Headers
+	JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
 	
 	String typeValue = TestUtil.getValueByJPath(respJson, "/holidays[0]/type");
 	String dayValue = TestUtil.getValueByJPath(respJson, "/holidays[0]/day");
@@ -146,12 +135,10 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid4"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("FeedbackMon");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-		//Status Code
-		TestUtil.statusCode(httpResp);	
-		//Json String
-		JSONObject respJson = TestUtil.JsonString(httpResp);
+	//Status code Json String & Headers
+	JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
 	
 	String idValue = TestUtil.getValueByJPath(respJson, "/questions[0]/id");
 	String typeValue = TestUtil.getValueByJPath(respJson, "/questions[0]/type");
@@ -172,13 +159,10 @@ public class getAPITest extends TestBase{
 		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("AttendanceURL");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-		//Status Code
-		TestUtil.statusCode(httpResp);	
-		
-		//Json String
-		JSONObject respJson = TestUtil.JsonString(httpResp);
+		//Status code Json String & Headers
+		JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
 		String PageRedirectValue = TestUtil.getValueByJPath(respJson, "/events/page.redirect");
 		System.out.println("Value of type : "+PageRedirectValue);
 	
@@ -191,13 +175,10 @@ public class getAPITest extends TestBase{
 		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("ManualPunch");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-		//Status Code
-		TestUtil.statusCode(httpResp);	
-		
-		//Json String
-		TestUtil.JsonString(httpResp);
+		//Status code Json String & Headers
+		TestUtil.staCodeJsonStringHeaders(httpResp);
 	}	
 	
 	@Test(priority = 8)
@@ -207,17 +188,9 @@ public class getAPITest extends TestBase{
 		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
 		headerMap2.putAll(header());
 		URL = prop.getProperty("Present");
-		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		httpResp=restClient.getResult(URL, headerMap2);
 		
-		//Status Code
-		TestUtil.statusCode(httpResp);	
-		
-		//Json String
-		TestUtil.JsonString(httpResp);
+		//Status code Json String & Headers
+	   TestUtil.staCodeJsonStringHeaders(httpResp);
 	}	
-	@AfterMethod
-	public void tearDown() {
-		//All Headers
-	TestUtil.allHeaders(httpResp);
-	}
 }

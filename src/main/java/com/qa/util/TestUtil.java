@@ -29,29 +29,20 @@ public class TestUtil extends TestBase{
 	}
 	
 	//Status Code
-	public static void statusCode(CloseableHttpResponse httpResp) {
+	public static JSONObject staCodeJsonStringHeaders(CloseableHttpResponse httpResp) throws ParseException, IOException, JSONException {
 		int staCode = httpResp.getStatusLine().getStatusCode();		
 		System.out.println("Status code is : "+staCode );
 		Assert.assertEquals(staCode, RESPONSE_STATUS_CODE_200	,"Status code is not 200");
-	}
-	
-	//Json String
-	public static JSONObject JsonString(CloseableHttpResponse httpResp) throws ParseException, IOException, JSONException {
-		String respString = EntityUtils.toString(httpResp.getEntity(),"UTF-8");	
-		JSONObject respJson = new JSONObject(respString);
-		System.out.println("JSON Response From API : "+ respJson);
-		return respJson;
-	}
-	
-	//All Header
-	public static void allHeaders(CloseableHttpResponse httpResp) {
 		Header[] allArray = httpResp.getAllHeaders();
 		HashMap<String, String> allHeaders = new HashMap<String, String>();
 		for (Header header : allArray) {
 			allHeaders.put(header.getName(), header.getValue());
 		}
-		
 		System.out.println("Headers Array : "+ allHeaders);
-		}
+		String respString = EntityUtils.toString(httpResp.getEntity(),"UTF-8");	
+		JSONObject respJson = new JSONObject(respString);
+		System.out.println("JSON Response From API : "+ respJson);
+		return respJson;
 	}
+}	
 
