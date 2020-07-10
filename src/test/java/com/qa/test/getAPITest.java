@@ -203,4 +203,46 @@ public class getAPITest extends TestBase{
 	System.out.println("Headers Array : "+ allHeaders);
 	}
 
+	@Test(priority = 5)
+	public void GetFeedbackMonthlyAPI() throws ClientProtocolException, IOException, JSONException {
+		restClient = new RestClient();
+		testBase=new TestBase();
+		HashMap<String, String> headerMap2 = new HashMap<String, String>();
+		headerMap2.put("auth-id", prop.getProperty("authid4"));
+		headerMap2.putAll(header());
+		URL = prop.getProperty("FeedbackMon");
+		httpResp=restClient.testOptHolidays(URL,headerMap2);
+		
+	//Status Code
+	int staCode = httpResp.getStatusLine().getStatusCode();		
+	System.out.println("Status code is : "+staCode );
+	Assert.assertEquals(staCode, RESPONSE_STATUS_CODE_200	,"Status code is not 200");
+	
+	//Json String
+	String respString = EntityUtils.toString(httpResp.getEntity(),"UTF-8");	
+	JSONObject respJson = new JSONObject(respString);
+	System.out.println("JSON Response From API : "+ respJson);
+	
+	String idValue = TestUtil.getValueByJPath(respJson, "/questions[0]/id");
+	String typeValue = TestUtil.getValueByJPath(respJson, "/questions[0]/type");
+	String textValue = TestUtil.getValueByJPath(respJson, "/questions[0]/text");
+	System.out.println("Value of type : "+idValue);
+	System.out.println("Value of date : "+typeValue);
+	System.out.println("Value of date : "+textValue);
+	
+	Assert.assertEquals(Integer.parseInt(idValue), 1);
+	Assert.assertEquals(typeValue, "sort");
+	Assert.assertEquals(textValue, "Rearrange the following stakeholders measuring your professional relationship with them.");
+	
+
+	//All Headers
+	Header[] allArray = httpResp.getAllHeaders();
+	HashMap<String, String> allHeaders = new HashMap<String, String>();
+	for (Header header : allArray) {
+		allHeaders.put(header.getName(), header.getValue());
+	}
+	
+	System.out.println("Headers Array : "+ allHeaders);
+	}
+
 }

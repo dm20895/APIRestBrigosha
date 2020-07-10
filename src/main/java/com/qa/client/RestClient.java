@@ -54,5 +54,14 @@ public class RestClient {
 			CloseableHttpResponse httpResp = httpClient.execute(httpget);
 			return httpResp;
 	}
-
+		//get method for monthly feedback
+		public CloseableHttpResponse testMonthlyFeedback(String url,HashMap<String, String> headerMap) throws ClientProtocolException, IOException, JSONException {
+			CloseableHttpClient httpClient = HttpClients.createDefault();
+			HttpGet httpget = new HttpGet(url);  
+			for(Map.Entry<String, String> entry : headerMap.entrySet()) {
+				httpget.addHeader(entry.getKey(),entry.getValue() );
+			}
+			CloseableHttpResponse httpResp = httpClient.execute(httpget);
+			return httpResp;
+}
 }

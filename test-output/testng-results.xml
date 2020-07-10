@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-09T13:01:53Z" name="Default suite" finished-at="2020-07-09T13:01:54Z" duration-ms="1354">
+  <suite started-at="2020-07-10T09:22:15Z" name="Suite" finished-at="2020-07-10T09:22:17Z" duration-ms="1493">
     <groups>
     </groups>
-    <test started-at="2020-07-09T13:01:53Z" name="Default test" finished-at="2020-07-09T13:01:54Z" duration-ms="1354">
+    <test started-at="2020-07-10T09:22:15Z" name="Test" finished-at="2020-07-10T09:22:17Z" duration-ms="1493">
       <class name="com.qa.test.getAPITest">
-        <test-method signature="GetLoginAPI()[pri:1, instance:com.qa.test.getAPITest@48524010]" started-at="2020-07-09T18:31:53Z" name="GetLoginAPI" finished-at="2020-07-09T18:31:53Z" duration-ms="672" status="PASS">
+        <test-method signature="GetLoginAPI()[pri:1, instance:com.qa.test.getAPITest@4b168fa9]" started-at="2020-07-10T14:52:15Z" name="GetLoginAPI" finished-at="2020-07-10T14:52:16Z" duration-ms="791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetLoginAPI -->
-        <test-method signature="GetGeoFencesAPI()[pri:2, instance:com.qa.test.getAPITest@48524010]" started-at="2020-07-09T18:31:53Z" name="GetGeoFencesAPI" finished-at="2020-07-09T18:31:54Z" duration-ms="157" status="PASS">
+        <test-method signature="GetGeoFencesAPI()[pri:2, instance:com.qa.test.getAPITest@4b168fa9]" started-at="2020-07-10T14:52:16Z" name="GetGeoFencesAPI" finished-at="2020-07-10T14:52:16Z" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetGeoFencesAPI -->
-        <test-method signature="GetViewCalenderAPI()[pri:3, instance:com.qa.test.getAPITest@48524010]" started-at="2020-07-09T18:31:54Z" name="GetViewCalenderAPI" finished-at="2020-07-09T18:31:54Z" duration-ms="290" status="PASS">
+        <test-method signature="GetViewCalenderAPI()[pri:3, instance:com.qa.test.getAPITest@4b168fa9]" started-at="2020-07-10T14:52:16Z" name="GetViewCalenderAPI" finished-at="2020-07-10T14:52:16Z" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetViewCalenderAPI -->
-        <test-method signature="GetOptHolidayAPI()[pri:4, instance:com.qa.test.getAPITest@48524010]" started-at="2020-07-09T18:31:54Z" name="GetOptHolidayAPI" finished-at="2020-07-09T18:31:54Z" duration-ms="207" status="PASS">
+        <test-method signature="GetOptHolidayAPI()[pri:4, instance:com.qa.test.getAPITest@4b168fa9]" started-at="2020-07-10T14:52:16Z" name="GetOptHolidayAPI" finished-at="2020-07-10T14:52:16Z" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetOptHolidayAPI -->
+        <test-method signature="GetFeedbackMonthlyAPI()[pri:5, instance:com.qa.test.getAPITest@4b168fa9]" started-at="2020-07-10T14:52:16Z" name="GetFeedbackMonthlyAPI" finished-at="2020-07-10T14:52:17Z" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetFeedbackMonthlyAPI -->
       </class> <!-- com.qa.test.getAPITest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
