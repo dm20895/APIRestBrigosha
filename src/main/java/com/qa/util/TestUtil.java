@@ -28,7 +28,7 @@ public class TestUtil extends TestBase{
 		return obj.toString();
 	}
 	
-	//Status Code
+	//Status Code Json String Headers
 	public static JSONObject staCodeJsonStringHeaders(CloseableHttpResponse httpResp) throws ParseException, IOException, JSONException {
 		int staCode = httpResp.getStatusLine().getStatusCode();		
 		System.out.println("Status code is : "+staCode );

@@ -1,76 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-10T14:46:32Z" name="Default suite" finished-at="2020-07-10T14:46:34Z" duration-ms="2329">
+  <suite started-at="2020-07-13T06:23:57Z" name="Default suite" finished-at="2020-07-13T06:24:00Z" duration-ms="2279">
     <groups>
     </groups>
-    <test started-at="2020-07-10T14:46:32Z" name="Default test" finished-at="2020-07-10T14:46:34Z" duration-ms="2329">
+    <test started-at="2020-07-13T06:23:57Z" name="Default test" finished-at="2020-07-13T06:24:00Z" duration-ms="2279">
       <class name="com.qa.test.getAPITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:32Z" name="setup" finished-at="2020-07-10T20:16:32Z" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:57Z" name="setup" finished-at="2020-07-13T11:53:57Z" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetLoginAPI()[pri:1, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:32Z" name="GetLoginAPI" finished-at="2020-07-10T20:16:32Z" duration-ms="644" status="PASS">
+        <test-method signature="GetLoginAPI()[pri:1, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:57Z" name="GetLoginAPI" finished-at="2020-07-13T11:53:58Z" duration-ms="647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetLoginAPI -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:32Z" name="setup" finished-at="2020-07-10T20:16:32Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:58Z" name="setup" finished-at="2020-07-13T11:53:58Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetGeoFencesAPI()[pri:2, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:32Z" name="GetGeoFencesAPI" finished-at="2020-07-10T20:16:32Z" duration-ms="156" status="PASS">
+        <test-method signature="GetGeoFencesAPI()[pri:2, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:58Z" name="GetGeoFencesAPI" finished-at="2020-07-13T11:53:58Z" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetGeoFencesAPI -->
-        <test-method signature="GetViewCalenderAPI()[pri:3, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:32Z" name="GetViewCalenderAPI" finished-at="2020-07-10T20:16:33Z" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:58Z" name="setup" finished-at="2020-07-13T11:53:58Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="GetViewCalenderAPI()[pri:3, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:58Z" name="GetViewCalenderAPI" finished-at="2020-07-13T11:53:59Z" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetViewCalenderAPI -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:32Z" name="setup" finished-at="2020-07-10T20:16:32Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="setup" finished-at="2020-07-13T11:53:59Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="setup" finished-at="2020-07-10T20:16:33Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="GetOptHolidayAPI()[pri:4, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="GetOptHolidayAPI" finished-at="2020-07-10T20:16:33Z" duration-ms="150" status="PASS">
+        <test-method signature="GetOptHolidayAPI()[pri:4, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="GetOptHolidayAPI" finished-at="2020-07-13T11:53:59Z" duration-ms="153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetOptHolidayAPI -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="setup" finished-at="2020-07-10T20:16:33Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="GetFeedbackMonthlyAPI()[pri:5, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="GetFeedbackMonthlyAPI" finished-at="2020-07-10T20:16:33Z" duration-ms="147" status="PASS">
+        <test-method signature="GetFeedbackMonthlyAPI()[pri:5, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="GetFeedbackMonthlyAPI" finished-at="2020-07-13T11:53:59Z" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetFeedbackMonthlyAPI -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="setup" finished-at="2020-07-10T20:16:33Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="setup" finished-at="2020-07-13T11:53:59Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetAttendanceAPI()[pri:6, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="GetAttendanceAPI" finished-at="2020-07-10T20:16:33Z" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="setup" finished-at="2020-07-13T11:53:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="GetAttendanceAPI()[pri:6, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="GetAttendanceAPI" finished-at="2020-07-13T11:53:59Z" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAttendanceAPI -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="setup" finished-at="2020-07-10T20:16:33Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="GetManualPunchAPI()[pri:7, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:33Z" name="GetManualPunchAPI" finished-at="2020-07-10T20:16:34Z" duration-ms="437" status="PASS">
+        <test-method signature="GetManualPunchAPI()[pri:7, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="GetManualPunchAPI" finished-at="2020-07-13T11:53:59Z" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetManualPunchAPI -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:34Z" name="setup" finished-at="2020-07-10T20:16:34Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="setup" finished-at="2020-07-13T11:53:59Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="GetPresentAPI()[pri:8, instance:com.qa.test.getAPITest@5c1a8622]" started-at="2020-07-10T20:16:34Z" name="GetPresentAPI" finished-at="2020-07-10T20:16:34Z" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="setup" finished-at="2020-07-13T11:53:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="GetPresentAPI()[pri:8, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="GetPresentAPI" finished-at="2020-07-13T11:53:59Z" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetPresentAPI -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="setup" finished-at="2020-07-13T11:53:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="GetAbsentAPI()[pri:9, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:53:59Z" name="GetAbsentAPI" finished-at="2020-07-13T11:54:00Z" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAbsentAPI -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:54:00Z" name="setup" finished-at="2020-07-13T11:54:00Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="GetHalfDayAPI()[pri:10, instance:com.qa.test.getAPITest@6156496]" started-at="2020-07-13T11:54:00Z" name="GetHalfDayAPI" finished-at="2020-07-13T11:54:00Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetHalfDayAPI -->
       </class> <!-- com.qa.test.getAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Deepak Mishra\AppData\Local\Temp\testng-eclipse-1931338098\testng-customsuite.xml</span>
+                    <span>C:\Users\Deepak Mishra\AppData\Local\Temp\testng-eclipse-205143327\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.test.getAPITest" class="method navigator-link" hash-for-method="GetAbsentAPI">GetAbsentAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.qa.test.getAPITest" class="method navigator-link" hash-for-method="GetAttendanceAPI">GetAttendanceAPI</a> <!-- method navigator-link -->
@@ -113,6 +118,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.qa.test.getAPITest" class="method navigator-link" hash-for-method="GetGeoFencesAPI">GetGeoFencesAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.qa.test.getAPITest" class="method navigator-link" hash-for-method="GetHalfDayAPI">GetHalfDayAPI</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -160,6 +170,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="GetAbsentAPI">
+                  </a> <!-- GetAbsentAPI -->
+                  <span class="method-name">GetAbsentAPI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="GetAttendanceAPI">
                   </a> <!-- GetAttendanceAPI -->
                   <span class="method-name">GetAttendanceAPI</span>
@@ -177,6 +194,13 @@
                   <a name="GetGeoFencesAPI">
                   </a> <!-- GetGeoFencesAPI -->
                   <span class="method-name">GetGeoFencesAPI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetHalfDayAPI">
+                  </a> <!-- GetHalfDayAPI -->
+                  <span class="method-name">GetHalfDayAPI</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -219,7 +243,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Deepak Mishra\AppData\Local\Temp\testng-eclipse-1931338098\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Deepak Mishra\AppData\Local\Temp\testng-eclipse-205143327\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -268,39 +292,47 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'GetLoginAPI')
 data.setCell(0, 2, 'com.qa.test.getAPITest')
-data.setCell(0, 3, 644);
+data.setCell(0, 3, 647);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GetManualPunchAPI')
+data.setCell(1, 1, 'GetViewCalenderAPI')
 data.setCell(1, 2, 'com.qa.test.getAPITest')
-data.setCell(1, 3, 437);
+data.setCell(1, 3, 287);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'GetViewCalenderAPI')
+data.setCell(2, 1, 'GetAbsentAPI')
 data.setCell(2, 2, 'com.qa.test.getAPITest')
-data.setCell(2, 3, 347);
+data.setCell(2, 3, 175);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'GetAttendanceAPI')
+data.setCell(3, 1, 'GetHalfDayAPI')
 data.setCell(3, 2, 'com.qa.test.getAPITest')
-data.setCell(3, 3, 248);
+data.setCell(3, 3, 173);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'GetPresentAPI')
+data.setCell(4, 1, 'GetFeedbackMonthlyAPI')
 data.setCell(4, 2, 'com.qa.test.getAPITest')
-data.setCell(4, 3, 161);
+data.setCell(4, 3, 168);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'GetGeoFencesAPI')
+data.setCell(5, 1, 'GetManualPunchAPI')
 data.setCell(5, 2, 'com.qa.test.getAPITest')
-data.setCell(5, 3, 156);
+data.setCell(5, 3, 168);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'GetOptHolidayAPI')
+data.setCell(6, 1, 'GetGeoFencesAPI')
 data.setCell(6, 2, 'com.qa.test.getAPITest')
-data.setCell(6, 3, 150);
+data.setCell(6, 3, 157);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'GetFeedbackMonthlyAPI')
+data.setCell(7, 1, 'GetPresentAPI')
 data.setCell(7, 2, 'com.qa.test.getAPITest')
-data.setCell(7, 3, 147);
+data.setCell(7, 3, 156);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'GetOptHolidayAPI')
+data.setCell(8, 2, 'com.qa.test.getAPITest')
+data.setCell(8, 3, 153);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'GetAttendanceAPI')
+data.setCell(9, 2, 'com.qa.test.getAPITest')
+data.setCell(9, 3, 142);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -338,63 +370,79 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetLoginAPI</span>
-                <span class="method-start">8 ms</span>
+                <span class="method-start">7 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">655 ms</span>
+                <span class="method-start">656 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetGeoFencesAPI</span>
-                <span class="method-start">655 ms</span>
+                <span class="method-start">657 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">813 ms</span>
+                <span class="method-start">817 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetViewCalenderAPI</span>
-                <span class="method-start">813 ms</span>
+                <span class="method-start">818 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1161 ms</span>
+                <span class="method-start">1107 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetOptHolidayAPI</span>
-                <span class="method-start">1161 ms</span>
+                <span class="method-start">1108 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1313 ms</span>
+                <span class="method-start">1263 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetFeedbackMonthlyAPI</span>
-                <span class="method-start">1313 ms</span>
+                <span class="method-start">1263 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1461 ms</span>
+                <span class="method-start">1432 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetAttendanceAPI</span>
-                <span class="method-start">1462 ms</span>
+                <span class="method-start">1433 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">1711 ms</span>
+                <span class="method-start">1578 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetManualPunchAPI</span>
-                <span class="method-start">1712 ms</span>
+                <span class="method-start">1578 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">2150 ms</span>
+                <span class="method-start">1748 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GetPresentAPI</span>
-                <span class="method-start">2151 ms</span>
+                <span class="method-start">1749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1906 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetAbsentAPI</span>
+                <span class="method-start">1907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2083 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetHalfDayAPI</span>
+                <span class="method-start">2084 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

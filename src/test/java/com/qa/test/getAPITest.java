@@ -17,7 +17,6 @@ import com.qa.util.TestUtil;
 
 public class getAPITest extends TestBase{
 	TestBase testBase;
-	String URL;
 	RestClient restClient; 
 	CloseableHttpResponse httpResp;
 	
@@ -28,21 +27,20 @@ public class getAPITest extends TestBase{
 	}
 	public HashMap<String, String> header() {
 		HashMap<String, String> headerMap = new HashMap<String, String>();
-		headerMap.put("Content-Type", prop.getProperty("ContentType"));
-		headerMap.put("api-section",  prop.getProperty("APISection"));
-		headerMap.put("api-version", prop.getProperty("APIVersion"));
-		headerMap.put("auth-token",prop.getProperty("AuthToken") );
+		headerMap.put("Content-Type", 	prop.getProperty("ContentType"));
+		headerMap.put("api-section",  	prop.getProperty("APISection"));
+		headerMap.put("api-version", 	prop.getProperty("APIVersion"));
+		headerMap.put("auth-token",		prop.getProperty("AuthToken"));
 		return headerMap;
 	}
 
 	//API Test for Login
 	@Test(priority = 1)
 	public void GetLoginAPI() throws ClientProtocolException, IOException, JSONException {
-		HashMap<String, String> headerMap2 = new HashMap<String, String>();
-		headerMap2.put("auth-id", prop.getProperty("authid1"));
-		headerMap2.putAll(header());
-		URL = prop.getProperty("LoginURL");
-		httpResp=restClient.getResult(URL, headerMap2);
+		HashMap<String, String> header = new HashMap<String, String>();
+		header.put("auth-id", prop.getProperty("authid1"));
+		header.putAll(header());
+		httpResp=restClient.getResult(prop.getProperty("LoginURL"), header);
 		
 	//Status code Json String & Headers
 	JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
@@ -64,8 +62,7 @@ public class getAPITest extends TestBase{
 		HashMap<String, String> headerMap2 = new HashMap<String, String>();
 		headerMap2.put("auth-id", prop.getProperty("authid2"));
 		headerMap2.putAll(header());
-		URL = prop.getProperty("GeoFencesURL");
-		httpResp=restClient.getResult(URL, headerMap2);
+		httpResp=restClient.getResult(prop.getProperty("GeoFencesURL"), headerMap2);
 		
 		//Status code Json String & Headers
 		JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
@@ -87,8 +84,7 @@ public class getAPITest extends TestBase{
 		HashMap<String, String> headerMap2 = new HashMap<String, String>();
 		headerMap2.put("auth-id", prop.getProperty("authid3"));
 		headerMap2.putAll(header());
-		URL = prop.getProperty("ViewCalender");
-		httpResp=restClient.getResult(URL, headerMap2);
+		httpResp=restClient.getResult(prop.getProperty("ViewCalender"), headerMap2);
 		
 		//Status code Json String & Headers
 		JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
@@ -111,8 +107,7 @@ public class getAPITest extends TestBase{
 		HashMap<String, String> headerMap2 = new HashMap<String, String>();
 		headerMap2.put("auth-id", prop.getProperty("authid4"));
 		headerMap2.putAll(header());
-		URL = prop.getProperty("OptHolidayURL");
-		httpResp=restClient.getResult(URL, headerMap2);
+		httpResp=restClient.getResult(prop.getProperty("OptHolidayURL"), headerMap2);
 		
 	//Status code Json String & Headers
 	JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
@@ -134,8 +129,7 @@ public class getAPITest extends TestBase{
 		HashMap<String, String> headerMap2 = new HashMap<String, String>();
 		headerMap2.put("auth-id", prop.getProperty("authid4"));
 		headerMap2.putAll(header());
-		URL = prop.getProperty("FeedbackMon");
-		httpResp=restClient.getResult(URL, headerMap2);
+		httpResp=restClient.getResult(prop.getProperty("FeedbackMon"), headerMap2);
 		
 	//Status code Json String & Headers
 	JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
@@ -158,8 +152,7 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid6"));
 		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
 		headerMap2.putAll(header());
-		URL = prop.getProperty("AttendanceURL");
-		httpResp=restClient.getResult(URL, headerMap2);
+		httpResp=restClient.getResult(prop.getProperty("AttendanceURL"), headerMap2);
 		
 		//Status code Json String & Headers
 		JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
@@ -174,8 +167,7 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid7"));
 		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
 		headerMap2.putAll(header());
-		URL = prop.getProperty("ManualPunch");
-		httpResp=restClient.getResult(URL, headerMap2);
+		httpResp=restClient.getResult(prop.getProperty("ManualPunch"), headerMap2);
 		
 		//Status code Json String & Headers
 		TestUtil.staCodeJsonStringHeaders(httpResp);
@@ -187,10 +179,39 @@ public class getAPITest extends TestBase{
 		headerMap2.put("auth-id", prop.getProperty("authid6"));
 		headerMap2.put("X-Requested-With", prop.getProperty("XRequestedWith"));
 		headerMap2.putAll(header());
-		URL = prop.getProperty("Present");
-		httpResp=restClient.getResult(URL, headerMap2);
+		httpResp=restClient.getResult(prop.getProperty("Present"), headerMap2);
 		
 		//Status code Json String & Headers
 	   TestUtil.staCodeJsonStringHeaders(httpResp);
 	}	
+	
+	@Test(priority = 9)
+	public void GetAbsentAPI() throws ClientProtocolException, IOException, JSONException {
+		HashMap<String, String> headerMap2 = new HashMap<String, String>();
+		headerMap2.put("auth-id", prop.getProperty("authid6"));
+		headerMap2.putAll(header());
+		httpResp=restClient.getResult(prop.getProperty("Absent"), headerMap2);
+		
+	//Status code Json String & Headers
+	JSONObject respJson = TestUtil.staCodeJsonStringHeaders(httpResp);
+	
+	String dateValue = TestUtil.getValueByJPath(respJson, "/record[0]/date");
+	String durationValue = TestUtil.getValueByJPath(respJson, "/record[0]/duration");
+	System.out.println("Value of type : "+dateValue);
+	System.out.println("Value of date : "+durationValue);
+	
+	Assert.assertEquals(dateValue, "01-Jan-2020");
+	Assert.assertEquals(durationValue, "00hrs 00mins");
+	}
+	@Test(priority = 10)
+	public void GetHalfDayAPI() throws ClientProtocolException, IOException, JSONException {
+		HashMap<String, String> headerMap2 = new HashMap<String, String>();
+		headerMap2.put("auth-id", prop.getProperty("authid4"));
+		headerMap2.putAll(header());
+		httpResp=restClient.getResult(prop.getProperty("Halfday"), headerMap2);
+		
+	//Status code Json String & Headers
+	TestUtil.staCodeJsonStringHeaders(httpResp);
+	
+	}
 }
